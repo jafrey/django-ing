@@ -28,7 +28,7 @@ def listarProducto(request):
     	p = Producto.objects.filter(id=idProducto)
 
 
-    	else:
+    else:
 
     	  p = Producto.objects.all()
 
