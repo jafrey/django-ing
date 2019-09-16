@@ -32,4 +32,4 @@ def listarProducto(request):
 
     	  p = Producto.objects.all()
 
-    return render_to_response('producto.html', { 'producto' : p })
+    return render_to_response('producto.html', { 'productos' : p })

@@ -13,5 +13,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^personas/',views.listarPersona),
-    url(r'^personas/',views.listarProducto),
+    url(r'^productos/',views.listarProducto),
 )
