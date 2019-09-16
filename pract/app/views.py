@@ -1,5 +1,7 @@
 from django.shortcuts import render, render_to_response
 
+from models import Persona, Producto, Compra
+
 # Create your views here.
 
 def listarPersona(request):
@@ -13,6 +15,6 @@ def listarPersona(request):
 
 	else:
 
-		t = Persona.objects.all()
+	  p = Persona.objects.all()
 
-	return render_to_response('persona.html', { 'personas' : t })
+	return render_to_response('persona.html', { 'personas' : p })
