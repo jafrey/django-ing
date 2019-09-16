@@ -11,3 +11,12 @@ class Persona(models.Model):
     class Meta:
         verbose_name = "Persona"
         verbose_name_plural = "Personas"
+
+class Producto(models.Model):
+    nombre = models.CharField(max_length=100)
+    apellido = models.CharField(max_length=100)
+    descripcion = models.CharField(max_length=100)
+
+    class Meta:
+        verbose_name = "Producto"
+        verbose_name_plural = "Productos"
