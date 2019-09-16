@@ -10,7 +10,7 @@ def listarPersona(request):
 
 		idPersona = request.GET.get('id')
 
-		p = Termo.objects.filter(id=idPersona)
+		p = Persona.objects.filter(id=idPersona)
 
 
 	else:
