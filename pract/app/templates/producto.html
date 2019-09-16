@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Productos</title>
+  </head>
+  <body>
+
+    {% for p in personas %}
+    		{{p.nombre}} - {{p.apellido}} - {{p.descripcion}}  <br>
+    	{% endfor %}
+
+  </body>
+</html>
